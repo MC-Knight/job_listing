@@ -97,7 +97,6 @@ body {
   height: 100px;
   border-radius: 50%;
   margin-right: 10px;
-  background: var(--dark-cyan-2);
 }
 
 .job-info-img img {
@@ -284,4 +283,76 @@ body {
 
 .filter-card-right:hover {
   background: var(--dark-cyan-2);
+}
+
+/* media query for small screen */
+@media screen and (max-width: 985px) {
+  .home-top {
+    height: 100px;
+    background-image: url(assets/bg-header-mobile.svg);
+  }
+  .home-jobs {
+    padding: 20px 2%;
+    gap: 40px;
+  }
+  .job-card {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 25px;
+  }
+  .job-details {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .indicator {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .job-info {
+    padding-left: 10px;
+  }
+
+  .job-info-img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    margin-top: -25px;
+  }
+
+  .job-info-details {
+    height: auto;
+    padding: 10px;
+  }
+
+  .job-info-details-company h3 {
+    font-size: 1rem;
+  }
+
+  .job-info-details h1 {
+    font-size: 1rem;
+  }
+
+  .job-info-details-location p {
+    font-size: 0.85rem;
+  }
+
+  .job-tools {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .job-tools-cards {
+    justify-content: flex-start;
+  }
 }
